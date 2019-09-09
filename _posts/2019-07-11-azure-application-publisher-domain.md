@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 谈谈Teams里Bot应用的发布商域名？
+title: 谈谈Teams里Bot应用的发布商域名
 ---
 
 之前的文章 [bot application admin consent](https://paul-cheung.github.io/admin-consent-for-teams-bot-application//)里，我们提到了怎么提升Application的权限。其中有一个问题是在最后一张图中的unverified字样，为什么会显示这个呢？

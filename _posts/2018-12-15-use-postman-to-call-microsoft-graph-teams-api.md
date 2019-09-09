@@ -94,7 +94,8 @@ catch (e) {
 * 请求地址: https://graph.microsoft.com/v1.0/me/joinedTeams
 * 请求Headers:
   * Key: Authorization
-  * Value: Bearer {{AccessToken}} //这里就是Bearer token作为Authorization信息。
+  * Value: Bearer {{AccessToken}} //这里就是Bearer token作为Authorization信息。  
+  
 发送请求，得到如下内容（你的返回内容可能不一样，这里只是我的返回）
 ```json
 {
