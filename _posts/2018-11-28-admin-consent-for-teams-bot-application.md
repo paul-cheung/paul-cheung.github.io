@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何为Teams里的Bot应用权限提升？
+title: Teams里的应用权限提升有哪些方法？
 ---
 
 在上篇文章 [permissions for teams bot application](https://paul-cheung.github.io/permissions-for-teams-bot-application/)里讲到了，如果Teams里的Bot需要权限，我们怎样为应用添加权限，步骤也很简单。
