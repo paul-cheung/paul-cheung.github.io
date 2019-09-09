@@ -1,4 +1,3 @@
-@@ -0,0 +1,51 @@
 ---
 layout: post
 title: 如何为Teams里的Bot申请权限？
