@@ -1,4 +1,4 @@
-1---
+---
 layout: post
 title: 如何为Teams里的Bot应用权限提升？
 ---
