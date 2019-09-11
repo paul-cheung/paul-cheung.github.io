@@ -11,7 +11,7 @@ title: 简单聊聊Teams里的Bot Event
 
 对于Bot事件，官方也给出了event的列表，这里跟大家做个解释：
 
-| <div style="width:150px">类型</div>|<div style="width:150px">数据</div>|<div style="width:150px">事件类型</div>|<div style="width:200px">描述</div>|<div style="width:150px">作用范围</div>|
+| 类型|数据|事件类型|描述|作用范围|
 |:----|:----|:-------|:----|:----|
 |conversationUpdate|membersAdded|teamMemberAdded|添加到Team里的成员|所有|
 |conversationUpdate|membersRemoved|teamMemberRemoved|成员从团队中被移除|群聊&团队|
