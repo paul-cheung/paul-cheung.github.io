@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何追踪Teams中应用的消息体？
+title: 如何追踪Teams中的消息体？
 ---
 
 如果大家看了另一篇文章[https://paul-cheung.github.io/how-to-setup-teams-app-develop-environment/](https://paul-cheung.github.io/how-to-setup-teams-app-develop-environment/)，那就会对ngrok有印象。
