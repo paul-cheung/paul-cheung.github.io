@@ -15,7 +15,6 @@ pip的安装这里参考[官网-Installation](https://pip.pypa.io/en/stable/inst
                                  Dload  Upload   Total   Spent    Left  Speed
 100 1604k  100 1604k    0     0  11.1M      0 --:--:-- --:--:-- --:--:-- 11.2M
 ```
-
 然后，输入python get-pip.py之后回车，如下：
 ```bash
 [root@ssserver ~]# python get-pip.py
@@ -29,6 +28,9 @@ Installing collected packages: pip, wheel
 Successfully installed pip-18.0 wheel-0.31.1
 [root@ssserver ~]# 
 ```
+注：以上是安装pip的方式，如果安装了python并且eazy_install也安装了，那就直接`easy_install pip`吧
+参考文章：https://ryandavison.net/installing-setuptools-pip-python/
+
 安装shadowsocks
 输入`pip install shadowsocks`后回车，如下：
 ```bash
