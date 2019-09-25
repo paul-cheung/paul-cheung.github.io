@@ -3,8 +3,6 @@ layout: post
 title: C#代码中如何解析Bot里的事件
 ---
 
-![microsoft-teams](../images/microsoftteams.png)
-
 在之前的一篇文章里简单介绍了一下Bot事件，大概有哪些，可以在哪些场景下使用，使用范围是什么样的。
 
 今天我们就来看一个实例，使用ASP.NET MVC框架写一个Bot，在Teams中安装Bot后，跟本项目中的代码进行消息交互。
