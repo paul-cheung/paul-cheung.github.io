@@ -14,7 +14,7 @@ title: 在第5届Microsoft 365 DevDays上讲讲Microsoft Teams
 现场的也很火爆
 ![ConsentPrompt](../images/20190416/p2.jpg)
 
-### 有幸参与技术分享，主要介绍了Task Module和Bot Event，还有Message Extension相关的内容
+本次有幸参与技术分享，主要介绍了Task Module和Bot Event，还有Message Extension相关的内容
 
 ![ConsentPrompt](../images/20190416/p1.jpg)
 ![ConsentPrompt](../images/20190416/p3.jpg)
