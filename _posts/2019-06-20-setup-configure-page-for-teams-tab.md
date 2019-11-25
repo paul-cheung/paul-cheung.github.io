@@ -20,7 +20,7 @@ title: Teams里的配置页怎么玩？
 * 选择将Tab安装到哪个team组
 ![select-team-to-install-tab](../images/20190620/select-team-to-install-tab.png)
 
-* 选择需要安装的功能模块。由于一个menifest文件里可以指定多个模块，比如添加Tab的时候也可以存在Connector，或者Message Extension功能模块，所以这里会有一个选择的步骤，需要安装哪个功能。这里选择Tab，点击Set up。
+* 选择需要安装的功能模块。由于一个manifest文件里可以指定多个模块，比如添加Tab的时候也可以存在Connector，或者Message Extension功能模块，所以这里会有一个选择的步骤，需要安装哪个功能。这里选择Tab，点击Set up。
 ![select-functionality-to-install](../images/20190620/select-functionality-to-install.png)
 
 * 点击Set Up会进入配置页面，这个页面的内容都是我们自己代码里的数据，一会儿跟大家解释一下：

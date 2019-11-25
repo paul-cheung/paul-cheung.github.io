@@ -38,7 +38,7 @@ ngrok 3333 -host-header="localhost:3333"
 这里我们应用运行起来的端口是3333，所以跑起来的效果如下：  
 ![task-module](../images/20181220/ngrok-run.png)  
 
-这里圈出来的地址，就是我们在Menifest文件里所要用到的外网地址。即网络数据流向：  
+这里圈出来的地址，就是我们在Manifest文件里所要用到的外网地址。即网络数据流向：  
 ```
 Internet -> ngrok server -> localhost:3333
 Internet <- ngrok server <- localhost:3333

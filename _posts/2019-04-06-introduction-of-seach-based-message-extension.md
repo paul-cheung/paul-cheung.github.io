@@ -81,7 +81,7 @@ public static object HandleMessageExtensionQuery(ConnectorClient connector, Acti
                 // 框架方法获取query对象
                 var query = activity.GetComposeExtensionQueryData();
                 // 这里对输入的command做个简单的验证，
-                // 即s_availableCommandIdList里包含了允许的所有command(menifest文件里))。
+                // 即s_availableCommandIdList里包含了允许的所有command(manifest文件里))。
                 if (query != null && s_availableCommandIdList.Contains(query.CommandId))
                 {
                     return QueryData(connector, activity, query);
@@ -100,7 +100,7 @@ public static object HandleMessageExtensionQuery(ConnectorClient connector, Acti
 private static ComposeExtensionResponse QueryData(ConnectorClient connector, Activity activity, ComposeExtensionQuery query)
 {
     var keyword = "";
-    // query对象里的参数，也都是menifest文件里定义好的。
+    // query对象里的参数，也都是manifest文件里定义好的。
     var titleParam = query.Parameters?.FirstOrDefault(p => p.Name == "keyword");
     if (titleParam != null)
     {

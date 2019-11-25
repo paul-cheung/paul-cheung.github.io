@@ -3,7 +3,7 @@ layout: post
 title: 如何为Teams里的Bot申请权限？
 ---
 
-在Teams里需要开发一款App，如果用到了Bot(Message Extension)，那就需要在[azure portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)创建自己的Application了，创建完了就可以写自己的Bot Application的Menifest.json文件了。
+在Teams里需要开发一款App，如果用到了Bot(Message Extension)，那就需要在[azure portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)创建自己的Application了，创建完了就可以写自己的Bot Application的Manifest.json文件了。
 
 当然，如果直接在Teams里的App Studio里创建也行，回过头来再在azure portal里编辑权限/icon相关。
 

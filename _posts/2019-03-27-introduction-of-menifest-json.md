@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 浅谈Teams开发中的menifest文件
+title: 浅谈Teams开发中的manifest文件
 ---
 
 本来想跟大家分享一个Message Extension的示例呢，比如上次说的基于搜索的Message Extension。
 
-但是鉴于可能有一部分人还不太了解怎么集成Teams和我们自己开发的应用，今天就先跟大家介绍一下具体的集成方式和menifest.json文件。
+但是鉴于可能有一部分人还不太了解怎么集成Teams和我们自己开发的应用，今天就先跟大家介绍一下具体的集成方式和manifest.json文件。
 
 ### 集成方式
 我们写好服务后，会host在外网上，比如Azure, Amazon或者自己的服务器，然后暴露服务接口在外网。
@@ -20,9 +20,9 @@ title: 浅谈Teams开发中的menifest文件
 
 那么，Teams怎么知道我们服务的地址，进而发消息给我们的服务呢？
 
-这个问题的答案，就是我们几天要介绍的menifest.json文件。
+这个问题的答案，就是我们几天要介绍的manifest.json文件。
 
-其实，有很多第三方开发都是这种模式，也就是说，我们将相关信息写在menifest.json文件中，再将menifest.json文件上传到Teams里。
+其实，有很多第三方开发都是这种模式，也就是说，我们将相关信息写在manifest.json文件中，再将manifest.json文件上传到Teams里。
 
 这样Teams在安装运行的时候，会找到我们服务的地址，进而进行数据交互。
 
@@ -36,7 +36,7 @@ title: 浅谈Teams开发中的menifest文件
   如果开发阶段使用App Studio来设置Message的endpoint，就更方便了。如下：
   ![app-studio-endpoint](../images/20190327/app-studio-endpoint.png)
 * 第一步我们告诉Bot的endpoint了，这时候Bot和Endpoint就关联起来了。  
-  这一步呢，我们再在menifest里填写BotId，这样Teams应用就知道和哪个Bot进行
+  这一步呢，我们再在manifest里填写BotId，这样Teams应用就知道和哪个Bot进行
   消息交互，进而找到我们设置的endpoint。
   如下（讲到Bot也就一起看看Bots节点下的相关属性）：
   ```json
@@ -84,7 +84,7 @@ title: 浅谈Teams开发中的menifest文件
 
 上面介绍了Teams如何与我们自己的服务进行交互，也就是Bot节点的详细信息，接下来我们看看Message Extension的内容。
 
-### menifest中的Message Extension节点
+### manifest中的Message Extension节点
 ```json
 // Message Extension的节点名称，为了向前兼容，名字就叫这个
 "composeExtensions": [
@@ -125,13 +125,13 @@ title: 浅谈Teams开发中的menifest文件
 
 其实，还有tab等节点，鉴于篇幅有限，这里我们只看看其他基本信息。
 
-### menifest中的其他基本信息都有哪些？
+### manifest中的其他基本信息都有哪些？
 包括app的信息，描述，作者等等。如下：
 ```json
 {
-    // menifest的schema地址
+    // manifest的schema地址
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
-    // menifest使用的schema版本
+    // manifest使用的schema版本
     "manifestVersion": "1.5",
     // 应用包的版本
     "version": "1.0.0",
