@@ -33,9 +33,12 @@ title: 跟朋友们讲讲Teams及Graph相关内容。
 虽然不太懂java，但也顺便学习了一把，也算收获。
 
 我主要跟大家讲了一下Graph基础知识，就留了一张图【捂脸】，是OAuth认证流程。
+![microsoft-teams](../images/20190928/screenshot.jpg)
 
 Graph相关的大家都不太了解，所以花了点时间讲解还有部分提问讨论内容。
 
 后边流程讲Teams的实践其实并不多，只有半小时，也是加快语速讲完了。
 
-![microsoft-teams](../images/20190928/screenshot.jpg)
+提问环节大家都很踊跃，可能Teams太有吸引力了，比较好玩，我也一一解答。
+
+最后大伙一起吃了大餐，意犹未尽。完了，各自回家。
