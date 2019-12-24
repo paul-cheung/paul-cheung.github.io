@@ -13,15 +13,7 @@ title: 和大家一起学习了一把Teams上的开发
 
 所以，只能说跟大家会儿共同探讨，一起学习吧。
 
-早上朋友催的紧，生怕我迟到了，大家苦等。
-
-这次是在九号线合川路地铁站出来的科技园区，之前来过一次。出地铁直奔16号楼3楼。
-
-朋友的会议室已经布置好了，屏幕都开始投了，已经有30+人在场了。
-
-简单聊了两句，跟大家打了个招呼，得知没有其他人后，我们就直接开始了，中间陆续有人进来。
-
-## 日程
+## 大概的日程
 #### 10:00-10:15：邀请方对我做了简单的介绍。
 #### 10:15-10:45：项目带队PM介绍了一下目前的平台开发进展，及遇到的问题。
 #### 10:45-11:00，针对以上问题，我做了简单的分析。
@@ -44,6 +36,33 @@ title: 和大家一起学习了一把Teams上的开发
 基本上也都动手做了一遍，因为比较简单不涉及bot，所以很快大家就上手了。
 
 至于bot方面，我跟大家讲了官方文档和开源示例项目。
+
+下边有人讨论，如果Teams应用要上线，怎么做多语言？  
+
+其实当时这块儿内容还在preview版本吧，不过5月20号已经release了，大家可以使用 了。用法也很简单，每种语言对应一个json文件，里边是每个字段的描述。
+
+![microsoft-teams](../images/20190312/dot-json.png)
+
+每个json文件里的内容，类似这样：
+```json
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json",
+  "name.short": "应用短名",
+  "name.full": "应用名称全全称",
+  "description.short": "应用简短描述",
+  "description.full": "应用描述全称",
+  "staticTabs[0].name": "这里是Tab1名称",
+  "staticTabs[1].name": "这里是Tab2名称",
+  "staticTabs[2].name": "这里是Tab3名称",
+  "bots[0].commandLists[0].commands[0].title": "Bot里的第一个command的title",
+  "bots[0].commandLists[0].commands[0].description": "Bot里的第一个command的描述"
+}
+```
+是不是很简单？
+
+当然，这里有人会有疑问，commandLists[0]可以理解，因为bot可以有多个command，但是为什么是bots[0]呢？
+
+原因就是，目前应用在manifest里只能配置一个bot，还不支持多个。所以这里的bots[0]其实是作为扩展的写法，如果以后支持多个bot在一个应用里，那么就比较容易做扩展。如此看来，巨硬真是666呀。
 
 总结一下，中间也遇到我之前没有碰到的问题，也是现场查阅资料，跟他家一起探讨。
 
