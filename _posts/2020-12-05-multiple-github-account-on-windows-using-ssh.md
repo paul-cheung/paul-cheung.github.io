@@ -94,4 +94,13 @@ id_rsa_work.pub
 
 这里的work和personal对应config里的host。
 
+2021/04/18 更新 For Mac
+首先cd到～/.ssh路径下
+1. 生成ssh的key pair(步骤略)，然后把pub key copy到对应server上（e.g. github portal上创建一个ssh key）
+2. > vim config，如图
+
+   ![app-info](../images/20201205/vim-ssh-config.png)]
+3. 测试，e.g. git clone git@github.com:paul-cheung/paul-cheung.github.io.git改为
+   > git clone git@personal:paul-cheung/paul-cheung.github.io.git
+   
 [参考链接](https://dev.to/raven404/managing-multiple-github-account-using-git-in-windows-2m0h)
